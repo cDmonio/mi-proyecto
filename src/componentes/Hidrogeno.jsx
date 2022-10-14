@@ -1,5 +1,6 @@
 import React from 'react';
 import Autonomia from './Autonomia';
+import Carga from './Carga'
 import styles from './Styles';
 
 class Hidrogeno extends React.PureComponent{
@@ -11,7 +12,8 @@ class Hidrogeno extends React.PureComponent{
         <p>Las baterías de Hidrogeno, es una alternativa muy interesante a las baterías electricas.</p>
         <img style={ styles } 
         src='https://www.magnuscmd.com/wp-content/uploads/2019/06/Featured.jpg' alt=''></img>
-        <Autonomia km="600KM" />
+        <Autonomia km={600} /> KM
+        <Carga carga='No' />
       </div>  
     )
   }

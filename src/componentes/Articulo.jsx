@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import PilasConvencionales from './Pilas'
 import BateriasLitio  from './Baterias'
 import Hidrogeno from "./Hidrogeno";
-
+import Likes from "./Likes";
+import Bitcoin from "./Bitcoins";
 class Articulo extends Component {
     render() {
       return (
@@ -12,6 +13,10 @@ class Articulo extends Component {
           <BateriasLitio />
           <br />
           <Hidrogeno />          
+          <br />
+          <Likes />
+          <br />
+          <Bitcoin />
         </div>
       )
     }

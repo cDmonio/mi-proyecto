@@ -1,5 +1,6 @@
 import React from 'react';
 import Autonomia from './Autonomia'
+import Carga from './Carga'
 
 function BateriasLitio() {
     return (
@@ -10,7 +11,8 @@ function BateriasLitio() {
             la autonomía de los coches eléctricos está aumentando a pasos agigantados.
             </p>
             <br />
-            <Autonomia km="40KM" />
+            <Autonomia km={40} /> KM
+            <Carga carga='Si' />
         </div>
     );
 }
